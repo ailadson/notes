@@ -1,0 +1,42 @@
+<hmtl>
+  <body>
+  </body>
+  <script>
+    function registerPageVisibilityCallback (cb) {
+      let eventName, hidden, state;
+
+      if (document.hidden !== undefined) {
+        eventName = "visibilitychange";
+        hidden = "hidden";
+        state = "visibilityState";
+      } else if (document.mozHidden !== undefined) {
+        eventName = "mozvisibilitychange";
+        hidden = "mozHidden";
+        state = "mozVisibilityState";
+      } else if (document.webkitHidden !== undefined) {
+        eventName = "webkitvisibilitychange";
+        hidden = "webkitHidden";
+        state = "webkitVisibilityState";
+      } else if (document.msHidden !== undefined) {
+        eventName = "msvisibilitychange";
+        hidden = "msHidden";
+        state = "msVisibilityState";
+      }
+
+      document.addEventListener(eventName, () => {
+        cb(hidden, state);
+      });
+    }
+
+    let body = document.body;
+    let count = 0;
+    body.innerHTML = "Off page " + count + " times";
+
+    registerPageVisibilityCallback((hidden, state) => {
+      if (!document[hidden]) {
+        count++;
+        body.innerHTML = "Off page " + count + " times";
+      }
+    });
+  </script>
+</html>

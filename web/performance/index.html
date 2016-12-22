@@ -1,0 +1,30 @@
+<html>
+<script>
+"use strict";
+const REPS = 100;
+
+performance.mark("start-unshift");
+let a = [];
+
+for (var i = 0; i < REPS; i++) {
+  a.unshift(i);
+}
+performance.mark("end-unshift");
+
+performance.mark("start-reverse");
+let b = [];
+
+for (var i = 0; i < REPS; i++) {
+  b.push(i);
+}
+
+b.reverse();
+performance.mark("end-reverse");
+
+performance.measure("durationUnshift", "start-unshift", "end-unshift");
+performance.measure("durationReverse", "start-reverse", "end-reverse");
+
+let perfs = performance.getEntriesByType("measure");
+console.log(perfs);
+</script>
+</html>
