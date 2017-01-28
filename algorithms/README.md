@@ -1,6 +1,6 @@
 # Algorithms
 
-1. [Combinatorial Search](./combinatorial_search.md)
+1. [Combinatorial Search](./combinatorial_search)
 2. DP
 3. Graphs
 4. Computational Geometry
