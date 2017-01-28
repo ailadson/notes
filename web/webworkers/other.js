@@ -1,1 +1,1 @@
-console.log("what now?");
+console.log("Inside other");

@@ -58,12 +58,15 @@
   - `removeItem(key)`
   - `clear()`
 
-# TODO
-
 ## IndexDB
 
-- store large files and blob data
+- transactional database system that store large files, blobs, and other structured data
 - uses indexes for fast high-performance lookup
+- stores objects supported by the [structured clone algorithm][../algorithms/structured_clone.md]
+- Flow:
+  * Specify Schema
+  * Open DB connection
+  * Make transactions
 
 ## Service Workers
 
@@ -81,5 +84,3 @@
 
 - `navigator.vibrate(ms/pattern)`
 - return false if not using a phone
-
-## Notifications
