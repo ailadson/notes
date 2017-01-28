@@ -50,7 +50,7 @@ algorithm. The steps are:
   solution, then we should do something with it. This can be seeing if it's the
   optimal one, printing it out, collecting it, etc. Depends on your app.
 
- **~~~~~Examples~~~~~***
+ **~~~~~ Examples ~~~~~**
 
   - [8 Queens](./code/8_queens.py)
   - [All Paths in a Graph](./code/all_paths_in_graph.py)
