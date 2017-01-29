@@ -113,4 +113,4 @@ of finding the global optimum or at least a better local optimum.
 * A lot of combinatorial problems can be reduced to n-choose-k problems. That is,
 problems like "if I have n items, how many ways can I choose n of them"
 
-* To solve these, learn to compute [binomial coefficients](./binomial_coefficient.py)
+* To solve these, learn to compute [binomial coefficients](./code/binomial_coefficient.py)
