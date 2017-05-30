@@ -1,9 +1,4 @@
-# My Notes
-
-* [web](./web/README.md)
-* [algorithms](./algorithms/README.md)
-
-### TODO
-
-* [tools]
-* [vr]
+* [JavaScript APIs](./js_apis/README.md)
+* [Algorithms](./algorithms/README.md)
+* [Web Servers](./webservers/README.md)
+* [Containers](./containers/README.md)
